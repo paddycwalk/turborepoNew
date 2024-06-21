@@ -1,0 +1,54 @@
+// @import '../../styles/mixins';
+
+.Button {
+  border: unset;
+  padding: var(--button-padding);
+  border-radius: var(--button-borderRadius);
+  width: var(--button-width);
+
+  &:hover {
+    cursor: pointer;
+    opacity: var(--button-opacity);
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
+  &-primary {
+    color: var(--button-primary-color);
+    background-color: var(--button-primary-bgcolor);
+  }
+
+  &-secondary {
+    background-color: var(--button-secondary-bgcolor);
+  }
+
+  &-outline {
+    outline: var(--button-outline);
+  }
+
+  &-borderless {
+    background-color: unset;
+  }
+
+  &-small {
+    padding: var(--button-small);
+  }
+
+  &-medium {
+    padding: var(--button-medium);
+  }
+
+  &-large {
+    padding: var(--button-large);
+  }
+
+  &_icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+// @import '../../../../apps/project1/app/components/atoms/Button/Button.module.scss';

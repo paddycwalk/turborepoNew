@@ -1,0 +1,23 @@
+.Radiobox {
+  + Label {
+    margin-left: 5px;
+  }
+
+  &[disabled] {
+    &:hover {
+      cursor: not-allowed;
+
+      + label {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    + label {
+      cursor: pointer;
+    }
+  }
+}

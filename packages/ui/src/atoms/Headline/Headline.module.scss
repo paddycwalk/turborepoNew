@@ -1,0 +1,34 @@
+@mixin headlineProps($varName) {
+  font-size: var(--#{$varName}-size);
+  line-height: var(--#{$varName}-lineHeight);
+  font-weight: var(--#{$varName}-weight);
+}
+
+.Headline {
+  margin: 0;
+  padding: 0;
+
+  &-2xl {
+    @include headlineProps(headline-2xl);
+  }
+
+  &-xl {
+    @include headlineProps(headline-xl);
+  }
+
+  &-l {
+    @include headlineProps(headline-l);
+  }
+
+  &-m {
+    @include headlineProps(headline-m);
+  }
+
+  &-s {
+    @include headlineProps(headline-s);
+  }
+
+  &-xs {
+    @include headlineProps(headline-xs);
+  }
+}

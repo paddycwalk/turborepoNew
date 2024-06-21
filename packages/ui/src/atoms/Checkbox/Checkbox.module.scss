@@ -1,0 +1,27 @@
+.Checkbox {
+  display: inline-flex;
+  align-items: baseline;
+
+  &:hover {
+    cursor: pointer;
+
+    label,
+    input {
+      cursor: pointer;
+    }
+  }
+
+  input {
+    border: var(--checkbox-border);
+    border-radius: var(--checkbox-border-radius);
+    margin-right: 5px;
+
+    &[disabled] {
+      cursor: not-allowed;
+
+      + label {
+        cursor: not-allowed;
+      }
+    }
+  }
+}

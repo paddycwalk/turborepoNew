@@ -1,0 +1,62 @@
+.Image {
+  position: relative;
+
+  &-cover {
+    object-fit: cover;
+
+    // nextjs style
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
+  }
+
+  &-contain {
+    object-fit: contain;
+    // nextjs style
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
+  }
+
+  &-16-9 {
+    aspect-ratio: 16/9;
+  }
+
+  &-9-16 {
+    aspect-ratio: 9/16;
+  }
+
+  &-5-2 {
+    aspect-ratio: 5/2;
+  }
+
+  &-4-3 {
+    aspect-ratio: 4/3;
+  }
+
+  &-3-4 {
+    aspect-ratio: 3/4;
+  }
+
+  &-3-2 {
+    aspect-ratio: 3/2;
+  }
+
+  &-2-3 {
+    aspect-ratio: 2/3;
+  }
+
+  &-1-1 {
+    aspect-ratio: 1/1;
+  }
+}

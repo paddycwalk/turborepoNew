@@ -1,0 +1,17 @@
+.Dropdown {
+  padding: var(--dropdown-padding);
+  border-radius: unset;
+  width: 100%;
+
+  &:focus-visible {
+    outline: unset;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+}
